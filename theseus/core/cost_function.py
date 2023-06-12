@@ -11,7 +11,7 @@ from typing import Callable, List, Optional, Sequence, Tuple, Union, cast
 
 import torch
 import torch.autograd.functional as autogradF
-from functorch import jacrev, vmap
+from torch.func import jacrev, vmap
 from typing_extensions import Protocol
 
 from theseus.geometry import Manifold
